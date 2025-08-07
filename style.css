@@ -87,3 +87,50 @@ h2{
     border-radius: 5px;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .temp {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .turn {
+    margin-top: 20px;
+    padding: 12px;
+    width: auto;
+    border-radius: 25px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
