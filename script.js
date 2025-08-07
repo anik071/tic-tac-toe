@@ -13,13 +13,13 @@ function play(row,column,id){
     }
     i++;
     if(i%2==1){
-        document.getElementById("trn").innerHTML = "O's turn";
+        document.getElementById("trn").innerHTML = "X's turn";
         document.getElementById(id).innerHTML = "O";
         grid[row][column]=0;
         console.log(grid);
 
 }else{
-        document.getElementById("trn").innerHTML = "X's turn";
+        document.getElementById("trn").innerHTML = "O's turn";
         document.getElementById(id).innerHTML = "X";
         grid[row][column]=1;
         console.log(grid);
@@ -29,13 +29,13 @@ function play(row,column,id){
             if(grid[j][0]!=-1 && grid[j][0]==grid[j][1] && grid[j][2]==grid[j][1]){
                 ok=1;
                 if(grid[j][0]==0){
-                document.getElementById("trn").innerHTML = "O wins   Game Over!!!";
+                document.getElementById("trn").innerHTML = "O wins!";
                 console.log(grid);
                  reset();
                 console.log(grid);
                 return;}
                 else{
-                    document.getElementById("trn").innerHTML = "X wins   Game Over!!!";
+                    document.getElementById("trn").innerHTML = "X wins!";
                     console.log(grid);
                     reset();
                     console.log(grid);
@@ -47,13 +47,13 @@ function play(row,column,id){
             if(grid[j][0]!=-1 && grid[0][j]==grid[1][j] && grid[1][j]==grid[2][j]){
                 ok=1;
                 if(grid[0][j]==0){
-                document.getElementById("trn").innerHTML = "O wins   Game Over!!!";
+                document.getElementById("trn").innerHTML = "O wins!";
                 console.log(grid);
                 reset();
                 console.log(grid);
                 return;
             }else{
-                    document.getElementById("trn").innerHTML = "X wins   Game Over!!!";
+                    document.getElementById("trn").innerHTML = "X wins!";
                     console.log(grid);
                     reset();
                     console.log(grid);
@@ -64,13 +64,13 @@ function play(row,column,id){
         if(grid[0][0]==grid[1][1] && grid[1][1]==grid[2][2] && grid[0][0]!=-1){
             ok=1;
                 if(grid[0][0]==0){
-                document.getElementById("trn").innerHTML = "O wins   Game Over!!!";
+                document.getElementById("trn").innerHTML = "O wins!";
                 console.log(grid);
                 reset();
                 console.log(grid);
                 return;
             }else{
-                    document.getElementById("trn").innerHTML = "X wins   Game Over!!!";
+                    document.getElementById("trn").innerHTML = "X wins!";
                     console.log(grid);
                     reset();
                     console.log(grid);
@@ -80,13 +80,13 @@ function play(row,column,id){
         if(grid[0][2]==grid[1][1] && grid[1][1]==grid[2][0] && grid[0][2]!=-1){
             ok=1;
                 if(grid[1][1]==0){
-                document.getElementById("trn").innerHTML = "O wins   Game Over!!!";
+                document.getElementById("trn").innerHTML = "O wins!";
                 console.log(grid);
                 reset();
                 console.log(grid);
                 return;
             }else{
-                    document.getElementById("trn").innerHTML = "X wins   Game Over!!!";
+                    document.getElementById("trn").innerHTML = "X wins!";
                     console.log(grid);
                     reset();
                     console.log(grid);
@@ -96,7 +96,7 @@ function play(row,column,id){
 
     }
     if(i==9){
-        document.getElementById("trn").innerHTML = "DRAW   Game Over!!!";
+        document.getElementById("trn").innerHTML = "DRAW!";
         reset();
         return;
     }
@@ -113,4 +113,5 @@ function restart(){
 for (let i = 0; i < headings.length; i++) {
   headings[i].innerHTML = "";
 }
+
 }
