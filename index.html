@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <div class="temp">
+    <div class="container">
+    <div class="box" onclick="play(0,0,1)"><h2 id="1"></h2></div>
+    <div class="box" onclick="play(0,1,2)"><h2 id="2"></h2></div>
+    <div class="box" onclick="play(0,2,3)"><h2 id="3"></h2></div>
+    <div class="box" onclick="play(1,0,4)"><h2 id="4"></h2></div>
+    <div class="box" onclick="play(1,1,5)"><h2 id="5"></h2></div>
+    <div class="box" onclick="play(1,2,6)"><h2 id="6"></h2></div>
+    <div class="box" onclick="play(2,0,7)"><h2 id="7"></h2></div>
+    <div class="box" onclick="play(2,1,8)"><h2 id="8"></h2></div>
+    <div class="box" onclick="play(2,2,9)"><h2 id="9"></h2></div>
+    </div>
+    <div class="turn" id="trn">
+    <div class="h31">
+    <h3 class="show-turn"></h3></div>
+    </div>
+    <div class="btn"><p onclick="restart();">Restart</p></div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
