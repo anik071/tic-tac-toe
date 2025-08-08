@@ -71,5 +71,5 @@ This project is open source and available under the **MIT License**.
 
 ### 👨‍💻 Author
 **Abdul Kader Anik**  
-📧 Email: anik.232071071@smuct.ac.bd
+📧 Email: anik.232071071@smuct.ac.bd.com
 🌐 GitHub: [anik071](https://github.com/anik071)
