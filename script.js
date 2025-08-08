@@ -44,7 +44,7 @@ function play(row,column,id){
             }          
         }
         for (let j = 0; j < 3; j++) {
-            if(grid[j][0]!=-1 && grid[0][j]==grid[1][j] && grid[1][j]==grid[2][j]){
+            if(grid[0][j]!=-1 && grid[0][j]==grid[1][j] && grid[1][j]==grid[2][j]){
                 ok=1;
                 if(grid[0][j]==0){
                 document.getElementById("trn").innerHTML = "O wins!";
@@ -115,3 +115,4 @@ for (let i = 0; i < headings.length; i++) {
 }
 
 }
+
